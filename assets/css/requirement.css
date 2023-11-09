@@ -1,0 +1,43 @@
+.text {
+    border: 4px #344c11 solid;
+    margin-top: 47px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h1 {
+    margin: auto;
+    font-size: 100px;
+    font-weight: bold;
+    background-color: #344c11;
+    color: white;
+    text-align: center;
+}
+
+p {
+    background-color: #778d45;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+}
+
+.content {
+    padding: 0px 40px 0px 40px;
+}
+
+.content-sub {
+    padding-left: 80px;
+}
+
+#bgimg {
+    height: 95vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
