@@ -20,3 +20,6 @@ body {
 .dropdown:hover .dropdown-content{
     display: block;
 }
+#bgimg{
+    background-image: url("../images/81de0eb3625c5462e78bbc2c8fbc014e.jpg");
+}
