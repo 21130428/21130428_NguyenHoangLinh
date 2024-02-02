@@ -1,0 +1,148 @@
+
+#container{
+    width: 470px;
+    height: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #e3e3e3;
+    border-bottom: 20px solid #e3e3e3;;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+}
+
+/* section_one */
+.title{
+    margin: auto;
+    color: #85d52c;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.content{
+    padding: 0;
+    height: 45px;
+    background-color: #f9f9f9;
+    border: solid 2px #efefef;
+    margin-bottom: 12px;
+}
+.content i{
+    width: 45px;
+    text-align: center;
+    padding-top: 15px;
+    color: #b9b9b9;
+}
+.content input{
+    border: none;
+    background-color: #f9f9f9;
+    height: 60%;
+    width: 80%;
+    border-left: 2px solid #f1f1f1;
+    padding-left: 15px;
+}
+
+/* section_three */
+.button{
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 10px;
+}
+#visa{
+    color: #b9b9b9;
+    background-color: #f9f9f9;
+    border:  solid 2px #efefef;
+    width: 50%;
+}
+#paypal{
+    color: #b9b9b9;
+    background-color: #f9f9f9;
+    border:  solid 2px #efefef;
+    width: 50%;
+}
+.button i{
+    padding-right: 5px;
+}
+#section_three .button button:hover{
+    background-color: #7ed321;
+    border: none;
+    color: white;
+}
+.bot{
+    display: inline-flex;
+    width: 100%;
+}
+.datetime{
+    width: 50%;
+    display: flex;
+    height: 48px;
+}
+.datetime input{
+    background-color: #f9f9f9;
+    padding-left: 15px;
+    width: 50%;
+    border:  solid 2px #efefef;
+}
+.datetime select{
+    background-color: #f9f9f9;
+    padding-left: 15px;
+    width: 50%;
+    border:  solid 2px #efefef;
+}
+.bot .cardCVC{
+    margin-right: 10px;
+    width: 50%;
+}
+.cardCVC input{
+    width: 60%;
+}
+/* section_two */
+#section_two{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inline-flex;
+    width: 100%;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+#section_two .date,.month{
+    margin-right: 10px;
+    padding-left: 15px;
+    width: 40px;
+}
+#section_two .year{
+    padding-left: 15px;
+    width: 45px;
+}
+#section_two button{
+    height: 48px;
+    float: left;
+    color: #b9b9b9;
+    margin: auto;
+    padding: auto;
+}
+#section_two button:hover{
+    background-color: #7ed321;
+    border: none;
+    color: white;
+}
+/* section_four */
+.footer{
+    display: inline-flex;
+}
+.footer p{
+    opacity: 0.3;
+    margin: 0;
+    padding-top: 10px;
+}
+.footer input{
+    margin: 0;
+    margin-right: 5px;
+}
+#section_four .title{
+    margin-top: 25px;
+    padding-bottom: 10px;
+}

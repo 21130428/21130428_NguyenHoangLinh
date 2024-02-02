@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/lab5.css">
             <style>
                 /* Định dạng cho tab */
                 .tab {
@@ -71,23 +72,446 @@
             </div>
         
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Tab1')">EX 1</button>
-            <button class="tablinks" onclick="openTab(event, 'Tab2')">EX 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab1')">User scenario</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">Implement</button>
         </div>
         
         <div id="Tab1" class="tabcontent">
-            <h3>Content for Tab 1</h3>
-            <p>This is the content for Tab 1.</p>
+            <h1>User scenario:</h1>
+            <div style="float: left; text-align: center; margin-left: 200px; margin-top: 20px;">
+                <img src="assets/images/user scenario.jpg">
+                <a href="assets/images/Screenshot 2024-02-02 221708.jpg">
+                </a>
+            </div>
+            <div style="float: right; text-align: center; margin-right: 200px;">
+                <img src="assets/images/lab5.jpg" style="margin-top: 20px;">
+                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=52-2&mode=design&t=jG2njMSpwfVxgslz-4">
+                    <br><button style="margin-left: 20px;">Figma</button>
+                </a>
+            </div>
         </div>
         
         <div id="Tab2" class="tabcontent">
-            <h3>Content for Tab 2</h3>
-            <p>This is the content for Tab 2.</p>
-        </div>
+            <h1>Implement:</h1>
+            <div id="container">
+                <div id="section_one">
+                    <p class="title">Account</p>
+                    <div class="content name"><i class="fa-solid fa-user"></i><input type="text" placeholder="Full Name"></div>
+                    <div class="content email"><i class="fa-solid fa-envelope"></i><input type="text"
+                            placeholder="Email Adress"></div>
+                    <div class="content password"><i class="fa-solid fa-key fa-flip-horizontal"></i><input type="text"
+                            placeholder="Password"></div>
+                </div>
+                <div id="section_two">
+                    <div class="left">
+                        <p class="title">Date of Birth</p>
+                        <input class="left content date" stype="text" placeholder="DD">
+                        <input class="left content month" type="text" placeholder="MM">
+                        <input class="left content year" type="text" placeholder="YYYY">
+                    </div>
+                    <div class="right">
+                        <p class="title">Gender</p>
+                        <button class="right content male">Male</button>
+                        <button class="right content female">Female</button>
+                    </div>
+                </div>
+                <div id="section_three">
+                    <p class="title">Payment Details</p>
+                    <div class="button">
+                        <button id="visa"><i class="fa-brands fa-cc-visa"></i>Credit Card</button>
+                        <button id="paypal"><i class="fa-brands fa-cc-paypal"></i>Paypal</button>
+                    </div>
         
-        <div id="Tab3" class="tabcontent">
-            <h3>Content for Tab 3</h3>
-            <p>This is the content for Tab 3.</p>
+                    <div class="content cardNumber"><i class="fa-regular fa-credit-card"></i><input type="text"
+                            placeholder="Card Number"></div>
+                    <div class="bot">
+                        <div class="content cardCVC"><i class="fa-solid fa-user"></i><input type="text" placeholder="Card CVC">
+                        </div>
+                        <div class="datetime">
+                            <select name="" class="select">
+                                <optgroup label="*January"></optgroup>
+                                <option value="">01 Jan</option>
+                                <option value="">02 Jan</option>
+                                <option value="">03 Jan</option>
+                                <option value="">04 Jan</option>
+                                <option value="">05 Jan</option>
+                                <option value="">06 Jan</option>
+                                <option value="">07 Jan</option>
+                                <option value="">08 Jan</option>
+                                <option value="">09 Jan</option>
+                                <option value="">10 Jan</option>
+                                <option value="">11 Jan</option>
+                                <option value="">12 Jan</option>
+                                <option value="">13 Jan</option>
+                                <option value="">14 Jan</option>
+                                <option value="">15 Jan</option>
+                                <option value="">16 Jan</option>
+                                <option value="">17 Jan</option>
+                                <option value="">18 Jan</option>
+                                <option value="">19 Jan</option>
+                                <option value="">20 Jan</option>
+                                <option value="">21 Jan</option>
+                                <option value="">22 Jan</option>
+                                <option value="">23 Jan</option>
+                                <option value="">24 Jan</option>
+                                <option value="">25 Jan</option>
+                                <option value="">26 Jan</option>
+                                <option value="">27 Jan</option>
+                                <option value="">28 Jan</option>
+                                <option value="">29 Jan</option>
+                                <option value="">30 Jan</option>
+                                <option value="">31 Jan</option>
+                                <optgroup label="*February"></optgroup>
+                                <option value="">01 Feb</option>
+                                <option value="">02 Feb</option>
+                                <option value="">03 Feb</option>
+                                <option value="">04 Feb</option>
+                                <option value="">05 Feb</option>
+                                <option value="">06 Feb</option>
+                                <option value="">07 Feb</option>
+                                <option value="">08 Feb</option>
+                                <option value="">09 Feb</option>
+                                <option value="">10 Feb</option>
+                                <option value="">11 Feb</option>
+                                <option value="">12 Feb</option>
+                                <option value="">13 Feb</option>
+                                <option value="">14 Feb</option>
+                                <option value="">15 Feb</option>
+                                <option value="">16 Feb</option>
+                                <option value="">17 Feb</option>
+                                <option value="">18 Feb</option>
+                                <option value="">19 Feb</option>
+                                <option value="">20 Feb</option>
+                                <option value="">21 Feb</option>
+                                <option value="">22 Feb</option>
+                                <option value="">23 Feb</option>
+                                <option value="">24 Feb</option>
+                                <option value="">25 Feb</option>
+                                <option value="">26 Feb</option>
+                                <option value="">27 Feb</option>
+                                <option value="">28 Feb</option>
+                                <optgroup label="*Match"></optgroup>
+                                <option value="">01 Mat</option>
+                                <option value="">02 Mat</option>
+                                <option value="">03 Mat</option>
+                                <option value="">04 Mat</option>
+                                <option value="">05 Mat</option>
+                                <option value="">06 Mat</option>
+                                <option value="">07 Mat</option>
+                                <option value="">08 Mat</option>
+                                <option value="">09 Mat</option>
+                                <option value="">10 Mat</option>
+                                <option value="">11 Mat</option>
+                                <option value="">12 Mat</option>
+                                <option value="">13 Mat</option>
+                                <option value="">14 Mat</option>
+                                <option value="">15 Mat</option>
+                                <option value="">16 Mat</option>
+                                <option value="">17 Mat</option>
+                                <option value="">18 Mat</option>
+                                <option value="">19 Mat</option>
+                                <option value="">20 Mat</option>
+                                <option value="">21 Mat</option>
+                                <option value="">22 Mat</option>
+                                <option value="">23 Mat</option>
+                                <option value="">24 Mat</option>
+                                <option value="">25 Mat</option>
+                                <option value="">26 Mat</option>
+                                <option value="">27 Mat</option>
+                                <option value="">28 Mat</option>
+                                <option value="">29 Mat</option>
+                                <option value="">30 Mat</option>
+                                <option value="">31 Mat</option>
+                                <optgroup label="*April"></optgroup>
+                                <option value="">01 Apl</option>
+                                <option value="">02 Apl</option>
+                                <option value="">03 Apl</option>
+                                <option value="">04 Apl</option>
+                                <option value="">05 Apl</option>
+                                <option value="">06 Apl</option>
+                                <option value="">07 Apl</option>
+                                <option value="">08 Apl</option>
+                                <option value="">09 Apl</option>
+                                <option value="">10 Apl</option>
+                                <option value="">11 Apl</option>
+                                <option value="">12 Apl</option>
+                                <option value="">13 Apl</option>
+                                <option value="">14 Apl</option>
+                                <option value="">15 Apl</option>
+                                <option value="">16 Apl</option>
+                                <option value="">17 Apl</option>
+                                <option value="">18 Apl</option>
+                                <option value="">19 Apl</option>
+                                <option value="">20 Apl</option>
+                                <option value="">21 Apl</option>
+                                <option value="">22 Apl</option>
+                                <option value="">23 Apl</option>
+                                <option value="">24 Apl</option>
+                                <option value="">25 Apl</option>
+                                <option value="">26 Apl</option>
+                                <option value="">27 Apl</option>
+                                <option value="">28 Apl</option>
+                                <option value="">29 Apl</option>
+                                <option value="">30 Apl</option>
+                                <optgroup label="*May"></optgroup>
+                                <option value="">01 May</option>
+                                <option value="">02 May</option>
+                                <option value="">03 May</option>
+                                <option value="">04 May</option>
+                                <option value="">05 May</option>
+                                <option value="">06 May</option>
+                                <option value="">07 May</option>
+                                <option value="">08 May</option>
+                                <option value="">09 May</option>
+                                <option value="">10 May</option>
+                                <option value="">11 May</option>
+                                <option value="">12 May</option>
+                                <option value="">13 May</option>
+                                <option value="">14 May</option>
+                                <option value="">15 May</option>
+                                <option value="">16 May</option>
+                                <option value="">17 May</option>
+                                <option value="">18 May</option>
+                                <option value="">19 May</option>
+                                <option value="">20 May</option>
+                                <option value="">21 May</option>
+                                <option value="">22 May</option>
+                                <option value="">23 May</option>
+                                <option value="">24 May</option>
+                                <option value="">25 May</option>
+                                <option value="">26 May</option>
+                                <option value="">27 May</option>
+                                <option value="">28 May</option>
+                                <option value="">29 May</option>
+                                <option value="">30 May</option>
+                                <option value="">31 May</option>
+                                <optgroup label="*June"></optgroup>
+                                <option value="">01 Jun</option>
+                                <option value="">02 Jun</option>
+                                <option value="">03 Jun</option>
+                                <option value="">04 Jun</option>
+                                <option value="">05 Jun</option>
+                                <option value="">06 Jun</option>
+                                <option value="">07 Jun</option>
+                                <option value="">08 Jun</option>
+                                <option value="">09 Jun</option>
+                                <option value="">10 Jun</option>
+                                <option value="">11 Jun</option>
+                                <option value="">12 Jun</option>
+                                <option value="">13 Jun</option>
+                                <option value="">14 Jun</option>
+                                <option value="">15 Jun</option>
+                                <option value="">16 Jun</option>
+                                <option value="">17 Jun</option>
+                                <option value="">18 Jun</option>
+                                <option value="">19 Jun</option>
+                                <option value="">20 Jun</option>
+                                <option value="">21 Jun</option>
+                                <option value="">22 Jun</option>
+                                <option value="">23 Jun</option>
+                                <option value="">24 Jun</option>
+                                <option value="">25 Jun</option>
+                                <option value="">26 Jun</option>
+                                <option value="">27 Jun</option>
+                                <option value="">28 Jun</option>
+                                <option value="">29 Jun</option>
+                                <option value="">30 Jun</option>
+                                <optgroup label="*July"></optgroup>
+                                <option value="">01 Jul</option>
+                                <option value="">02 Jul</option>
+                                <option value="">03 Jul</option>
+                                <option value="">04 Jul</option>
+                                <option value="">05 Jul</option>
+                                <option value="">06 Jul</option>
+                                <option value="">07 Jul</option>
+                                <option value="">08 Jul</option>
+                                <option value="">09 Jul</option>
+                                <option value="">10 Jul</option>
+                                <option value="">11 Jul</option>
+                                <option value="">12 Jul</option>
+                                <option value="">13 Jul</option>
+                                <option value="">14 Jul</option>
+                                <option value="">15 Jul</option>
+                                <option value="">16 Jul</option>
+                                <option value="">17 Jul</option>
+                                <option value="">18 Jul</option>
+                                <option value="">19 Jul</option>
+                                <option value="">20 Jul</option>
+                                <option value="">21 Jul</option>
+                                <option value="">22 Jul</option>
+                                <option value="">23 Jul</option>
+                                <option value="">24 Jul</option>
+                                <option value="">25 Jul</option>
+                                <option value="">26 Jul</option>
+                                <option value="">27 Jul</option>
+                                <option value="">28 Jul</option>
+                                <option value="">29 Jul</option>
+                                <option value="">30 Jul</option>
+                                <option value="">31 Jul</option>
+                                <optgroup label="*August"></optgroup>
+                                <option value="">01 Aug</option>
+                                <option value="">02 Aug</option>
+                                <option value="">03 Aug</option>
+                                <option value="">04 Aug</option>
+                                <option value="">05 Aug</option>
+                                <option value="">06 Aug</option>
+                                <option value="">07 Aug</option>
+                                <option value="">08 Aug</option>
+                                <option value="">09 Aug</option>
+                                <option value="">10 Aug</option>
+                                <option value="">11 Aug</option>
+                                <option value="">12 Aug</option>
+                                <option value="">13 Aug</option>
+                                <option value="">14 Aug</option>
+                                <option value="">15 Aug</option>
+                                <option value="">16 Aug</option>
+                                <option value="">17 Aug</option>
+                                <option value="">18 Aug</option>
+                                <option value="">19 Aug</option>
+                                <option value="">20 Aug</option>
+                                <option value="">21 Aug</option>
+                                <option value="">22 Aug</option>
+                                <option value="">23 Aug</option>
+                                <option value="">24 Aug</option>
+                                <option value="">25 Aug</option>
+                                <option value="">26 Aug</option>
+                                <option value="">27 Aug</option>
+                                <option value="">28 Aug</option>
+                                <option value="">29 Aug</option>
+                                <option value="">30 Aug</option>
+                                <option value="">31 Aug</option>
+                                <optgroup label="*September"></optgroup>
+                                <option value="">01 Sep</option>
+                                <option value="">02 Sep</option>
+                                <option value="">03 Sep</option>
+                                <option value="">04 Sep</option>
+                                <option value="">05 Sep</option>
+                                <option value="">06 Sep</option>
+                                <option value="">07 Sep</option>
+                                <option value="">08 Sep</option>
+                                <option value="">09 Sep</option>
+                                <option value="">10 Sep</option>
+                                <option value="">11 Sep</option>
+                                <option value="">12 Sep</option>
+                                <option value="">13 Sep</option>
+                                <option value="">14 Sep</option>
+                                <option value="">15 Sep</option>
+                                <option value="">16 Sep</option>
+                                <option value="">17 Sep</option>
+                                <option value="">18 Sep</option>
+                                <option value="">19 Sep</option>
+                                <option value="">20 Sep</option>
+                                <option value="">21 Sep</option>
+                                <option value="">22 Sep</option>
+                                <option value="">23 Sep</option>
+                                <option value="">24 Sep</option>
+                                <option value="">25 Sep</option>
+                                <option value="">26 Sep</option>
+                                <option value="">27 Sep</option>
+                                <option value="">28 Sep</option>
+                                <option value="">29 Sep</option>
+                                <option value="">30 Sep</option>
+                                <optgroup label="*October"></optgroup>
+                                <option value="">01 Oct</option>
+                                <option value="">02 Oct</option>
+                                <option value="">03 Oct</option>
+                                <option value="">04 Oct</option>
+                                <option value="">05 Oct</option>
+                                <option value="">06 Oct</option>
+                                <option value="">07 Oct</option>
+                                <option value="">08 Oct</option>
+                                <option value="">09 Oct</option>
+                                <option value="">10 Oct</option>
+                                <option value="">11 Oct</option>
+                                <option value="">12 Oct</option>
+                                <option value="">13 Oct</option>
+                                <option value="">14 Oct</option>
+                                <option value="">15 Oct</option>
+                                <option value="">16 Oct</option>
+                                <option value="">17 Oct</option>
+                                <option value="">18 Oct</option>
+                                <option value="">19 Oct</option>
+                                <option value="">20 Oct</option>
+                                <option value="">21 Oct</option>
+                                <option value="">22 Oct</option>
+                                <option value="">23 Oct</option>
+                                <option value="">24 Oct</option>
+                                <option value="">25 Oct</option>
+                                <option value="">26 Oct</option>
+                                <option value="">27 Oct</option>
+                                <option value="">28 Oct</option>
+                                <option value="">29 Oct</option>
+                                <option value="">30 Oct</option>
+                                <option value="">31 Oct</option>
+                                <optgroup label="*Novenber"></optgroup>
+                                <option value="">01 Nov</option>
+                                <option value="">02 Nov</option>
+                                <option value="">03 Nov</option>
+                                <option value="">04 Nov</option>
+                                <option value="">05 Nov</option>
+                                <option value="">06 Nov</option>
+                                <option value="">07 Nov</option>
+                                <option value="">08 Nov</option>
+                                <option value="">09 Nov</option>
+                                <option value="">10 Nov</option>
+                                <option value="">11 Nov</option>
+                                <option value="">12 Nov</option>
+                                <option value="">13 Nov</option>
+                                <option value="">14 Nov</option>
+                                <option value="">15 Nov</option>
+                                <option value="">16 Nov</option>
+                                <option value="">17 Nov</option>
+                                <option value="">18 Nov</option>
+                                <option value="">19 Nov</option>
+                                <option value="">20 Nov</option>
+                                <option value="">21 Nov</option>
+                                <option value="">22 Nov</option>
+                                <option value="">23 Nov</option>
+                                <option value="">24 Nov</option>
+                                <option value="">25 Nov</option>
+                                <option value="">26 Nov</option>
+                                <option value="">27 Nov</option>
+                                <option value="">28 Nov</option>
+                                <option value="">29 Nov</option>
+                                <option value="">30 Nov</option>
+                                <optgroup label="*December"></optgroup>
+                                <option value="">01 Dec</option>
+                                <option value="">02 Dec</option>
+                                <option value="">03 Dec</option>
+                                <option value="">04 Dec</option>
+                                <option value="">05 Dec</option>
+                                <option value="">06 Dec</option>
+                                <option value="">07 Dec</option>
+                                <option value="">08 Dec</option>
+                                <option value="">09 Dec</option>
+                                <option value="">10 Dec</option>
+                                <option value="">11 Dec</option>
+                                <option value="">12 Dec</option>
+                                <option value="">13 Dec</option>
+                                <option value="">14 Dec</option>
+                                <option value="">15 Dec</option>
+                                <option value="">16 Dec</option>
+                                <option value="">17 Dec</option>
+                                <option value="">18 Dec</option>
+                                <option value="">19 Dec</option>
+                                <option value="">20 Dec</option>
+                                <option value="">21 Dec</option>
+                                <option value="">22 Dec</option>
+                                <option value="">23 Dec</option>
+                                <option value="">24 Dec</option>
+                                <option value="">25 Dec</option>
+                                <option value="">26 Dec</option>
+                                <option value="">27 Dec</option>
+                                <option value="">28 Dec</option>
+                                <option value="">29 Dec</option>
+                                <option value="">30 Dec</option>
+                                <option value="">31 Dec</option>
+                            </select>
+                            <input type="number" min="0" max="9999" value="2023">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <script>
