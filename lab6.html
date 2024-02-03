@@ -70,28 +70,71 @@
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Ex1</button>
         <button class="tablinks" onclick="openTab(event, 'Tab2')">Ex2</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">Ex3</button>
     </div>
 
     <div id="Tab1" class="tabcontent">
-        <h1>Ex1:</h1>
-        <div class="tab" style="margin: auto; width: 10%;">
-            <button class="tablinks">Design</button>
-            <a href="ex1.html">
-                <button class="tablinks">Implement</button>
+        <h1>Ex1: Z-pattern</h1>
+        <div class="subtab" style="margin: auto; width: max-content; margin-bottom: 50px;">
+            <button class="subtablinks" onclick="openSubTab(event, 'DesignTab1')">Design</button>
+            <a href="#" onclick="loadImplementContent('ex1.html', 'ImplementTab1')"> <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
+                <button class="subtablinks" onclick="openSubTab(event, 'ImplementTab1')">Implement</button>
             </a>
+        </div>
+
+        <div id="DesignTab1" class="subtabcontent">
+            <div style="float: left; text-align: center; margin-left: 300px; margin-top: 20px;">
+                <img src="assets/images/zpattern.jpg">
+                <a href="assets/images/zpattern.jpg" download="assets/images/zpattern.jpg">
+                    <br><button style="margin-top: 20px;">Download Image</button>
+                </a>
+            </div>
+            <div style="float: right; text-align: center; margin-right: 300px;">
+                <img src="assets/images/z.jpg" style="border: black solid 5px; margin: 20px 0px;">
+                <a href="assets/images/z.jpg" download="assets/images/z.jpg">
+                    <br><button>Download Image</button>
+                </a>
+                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-21&mode=design&t=Cth7ODzuYc58IaNN-4">
+                    <button style="margin-left: 20px;">Figma</button>
+                </a>
+            </div>
+        </div>
+
+        <div id="ImplementTab1" class="subtabcontent">
         </div>
     </div>
 
     <div id="Tab2" class="tabcontent">
-        <h1>Ex2:</h1>
-    </div>
+        <h1>Ex2: F-pattern</h1>
 
-    <div id="Tab3" class="tabcontent">
-        <h1>Ex3:</h1>
-        <p>This is the content for Tab 2.</p>
-    </div>
+        <div class="subtab" style="margin: auto; width: max-content; margin-bottom: 50px;">
+            <button class="subtablinks" onclick="openSubTab(event, 'DesignTab2')">Design</button>
+            <a href="#" onclick="loadImplementContent('ex2.html', 'ImplementTab2')"> <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
+                <button class="subtablinks" onclick="openSubTab(event, 'ImplementTab2')">Implement</button>
+            </a>
+        </div>
+        
+        <div id="DesignTab2" class="subtabcontent">
+            <div style="float: left; text-align: center; margin-left: 300px; margin-top: 20px;">
+                <img src="assets/images/fpattern.jpg">
+                <a href="assets/images/fpattern.jpg" download="assets/images/fpattern.jpg">
+                    <br><button style="margin-top: 20px;">Download Image</button>
+                </a>
+            </div>
+            <div style="float: right; text-align: center; margin-right: 300px;">
+                <img src="assets/images/f.jpg" style="border: black solid 5px; margin: 20px 0px;">
+                <a href="assets/images/f.jpg" download="assets/images/f.jpg">
+                    <br><button>Download Image</button>
+                </a>
+                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-2&mode=design&t=Cth7ODzuYc58IaNN-4">
+                    <button style="margin-left: 20px;">Figma</button>
+                </a>
+            </div>
+        </div>
 
+        <div id="ImplementTab2" class="subtabcontent">
+        </div>
+    </div>
+    
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -106,7 +149,32 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+    
+        function openSubTab(evt, subTabName) {
+            var i, subtabcontent, subtablinks;
+            subtabcontent = document.getElementsByClassName("subtabcontent");
+            for (i = 0; i < subtabcontent.length; i++) {
+                subtabcontent[i].style.display = "none";
+            }
+            subtablinks = document.getElementsByClassName("subtablinks");
+            for (i = 0; i < subtablinks.length; i++) {
+                subtablinks[i].className = subtablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(subTabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function loadImplementContent(url, targetId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    var implementContent = document.getElementById(targetId);
+                    implementContent.innerHTML = data;
+                })
+                .catch(error => console.error('Error:', error));
+        }
     </script>
+    
 </body>
 
 </html>

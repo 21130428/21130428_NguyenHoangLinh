@@ -1,0 +1,328 @@
+/* reset lai trang thai */
+
+/* container chua cac phan tu */
+.container {
+    margin-left: 360px;
+    margin-right: 360px;
+}
+
+/* section 1 */
+#section_text_2 {
+    height: 120px;
+    background-color: #f3f3f3;
+}
+
+/* phan tu ben trai */
+#section_text_2 .columns.alpha {
+    float: left;
+    width: 170px;
+    height: 40px;
+    padding-top: 35px;
+}
+
+/* phan tu ben phai */
+#section_text_2 .small_bold.orange_bg {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #f77825;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+    padding: 17px 32px;
+    margin-bottom: 45px;
+    margin-top: 27px;
+}
+
+/* section 2 */
+#section_header_1 {
+    height: 100px;
+    background-color: white;
+}
+#navbar-collapse-02 ul{
+    margin: 0;
+    padding: 0;
+}
+#navbar-collapse-02 li {
+    list-style-type: none;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    font-size: 20px;
+    color: #f1f1f1;
+    width: 100px;
+}
+
+#navbar-collapse-02 a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+#section_header_1 .padding_25.right_socials li {
+    list-style-type: none;
+    float: right;
+    width: 100;
+    font-size: 20;
+}
+
+.bottom-icons a {}
+
+/* section 3 */
+#section_slider {
+    background-color: #eeeeee;
+}
+
+/* giong nhu slider */
+#section_slider img {
+    width: 1170px;
+    height: 460px;
+    margin: 100px 0px;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+
+#section_slider .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#section_slider .carousel-inner {
+    display: flex;
+}
+
+#section_slider .item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+#section_slider .carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 3%;
+    color: white;
+}
+#section_slider .carousel-caption p{
+    margin: 0;
+    font-size: 20px;
+}
+#section_slider .carousel-caption h3{
+    font-weight: normal;
+    margin: 0;
+    font-size: 40px;
+}
+/* section 4 */
+#section_gym_4 {
+    height: 585px;
+}
+
+#section_gym_4 .one-third.column {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+
+#section_gym_4 .top_padding img {
+    margin-top: 100px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#section_gym_4 .gym_st {
+    margin-bottom: 45px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#section_gym_4 .gym_text {
+    font-size: 15px;
+    line-height: 2;
+    color: #a9a9a9;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 35px;
+}
+
+#section_gym_4 .slow_fade.pix_text {
+    font-size: 15px;
+    background-color: #ff8833;
+    color: #fff8ca;
+    text-decoration: none;
+    margin-bottom: 25px;
+    padding: 14px 30px 10px;
+    border-radius: 5px;
+}
+
+/* section 5 */
+#section_intro_title {
+    background-color: #f3f3f3;
+    height: 600px;
+
+}
+
+#section_intro_title .flat_pricing.pix_builder_bg {
+    margin-top: 14px;
+    float: left;
+    height: 500px;
+    width: 366px;
+    text-align: center;
+    border: #dddddd;
+    border-style: solid;
+    margin-left: 22px;
+    background-color: #ffffff;
+}
+
+#section_intro_title .big_title {
+    margin: auto;
+    padding-top: 54px;
+    padding-bottom: 30px;
+    font-size: 55px;
+    color: #2dc0e8;
+}
+
+#section_intro_title .big_title.orange {
+    color: #f77825;
+}
+
+#section_intro_title .light_gray.editContent {
+    margin: auto;
+    font-size: 17px;
+    color: #999999;
+    padding-bottom: 70px;
+}
+
+#section_intro_title .bold_text {
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    background-color: #2dc0e8;
+    text-decoration: none;
+    padding: 22px 25px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#section_intro_title .flat_pricing_list.light_gray {
+    margin: auto;
+    padding-bottom: 38px;
+    list-style-type: none;
+    color: #a69999;
+}
+
+#section_intro_title .flat_pricing_list.light_gray li {
+    height: 50px;
+    font-size: 20px;
+    width: 90%;
+}
+
+#section_intro_title .orange_bg {
+    background-color: #f77825;
+    text-align: center;
+}
+
+/* section 6 */
+#section_party_3 {
+    padding: 0;
+    margin: 0;
+    height: 735px;
+    background-color: #191919;
+}
+
+#section_party_3 .sixteen.columns {
+    padding-top: 88px;
+}
+
+#section_party_3 .text_input.pix_builder_bg {
+    padding-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #292929;
+    width: 560px;
+    background-color: #151515;
+}
+
+#section_party_3 .headtext_style {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+}
+
+#section_party_3 .segment.pix_builder_bg {
+    border-top: #1c8ff5 10px solid;
+    margin: 0 230px 0;
+    padding-bottom: 35px;
+}
+
+#section_party_3 .subtext_style {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 85px;
+    padding-right: 85px;
+    color: #808080;
+    padding-bottom: 62px;
+}
+
+#section_party_3 form {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#section_party_3 #contact_form input {
+    width: 96%;
+    padding-left: 15px;
+    font-size: 20px;
+    height: 65px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+#section_party_3 #contact_form button {
+    margin: 0;
+    background-color: #2679e7;
+    color: white;
+    font-size: 20px;
+    height: 65px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+
+/* footer */
+#section_party_4 {
+    height: 80px;
+    background-color: #151515;
+
+}
+
+#section_party_4 .seven.columns.alpha {
+    color: #a9a99b;
+    float: left;
+    font-size: 20px;
+    padding-top: 38px;
+    width: 50%;
+}
+
+#section_party_4 .nine.columns.omega {
+    padding-top: 40px;
+    color: #a9a99b;
+    font-size: 20px;
+    float: right;
+}
+
+#section_party_4 .pixfort_st {
+    color: #1c8fe7;
+    font-weight: bold;
+}
+
+#section_party_4 .omega ul {
+    margin: 0;
+}
+
+#section_party_4 .omega li {
+    list-style-type: none;
+}
