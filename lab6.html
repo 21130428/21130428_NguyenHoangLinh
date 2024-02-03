@@ -61,22 +61,22 @@
                 style="font-weight: bold;">LAB6</a>
             <a href="lab7.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
                 style="font-weight: bold;">LAB7</a>
-            <a href="lab8.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                style="font-weight: bold;">LAB8</a>
             <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
                 style="font-weight: bold;">CONTACT</a>
         </div>
     </div>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Tab1')">Ex1</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab2')">Ex2</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">Requirement</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Ex1</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Ex2</button>
     </div>
 
-    <div id="Tab1" class="tabcontent">
+    <div id="Tab2" class="tabcontent">
         <h1>Ex1: Z-pattern</h1>
         <div class="subtab" style="margin: auto; width: max-content; margin-bottom: 50px;">
             <button class="subtablinks" onclick="openSubTab(event, 'DesignTab1')">Design</button>
-            <a href="#" onclick="loadImplementContent('ex1.html', 'ImplementTab1')"> <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
+            <a href="#" onclick="loadImplementContent('ex1.html', 'ImplementTab1')">
+                <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
                 <button class="subtablinks" onclick="openSubTab(event, 'ImplementTab1')">Implement</button>
             </a>
         </div>
@@ -93,7 +93,8 @@
                 <a href="assets/images/z.jpg" download="assets/images/z.jpg">
                     <br><button>Download Image</button>
                 </a>
-                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-21&mode=design&t=Cth7ODzuYc58IaNN-4">
+                <a
+                    href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-21&mode=design&t=Cth7ODzuYc58IaNN-4">
                     <button style="margin-left: 20px;">Figma</button>
                 </a>
             </div>
@@ -102,17 +103,44 @@
         <div id="ImplementTab1" class="subtabcontent">
         </div>
     </div>
+    <div id="Tab1" class="tabcontent">
+        <div class="text">
+            <h1>Requirement:</h1>
+            <ul>
+                <li>
+                    <p class="contentt">
+                        Trong menu Labs, tạo 1 menu Lab6 (file lab6.html)  sau đó tạo 2 tab Ex1, Ex2.
+                    </p>
+                </li>
+                <li>
+                    <p class="contentt">Ex1: Thiết kế một trang Web đơn giản sử dụng mẫu F-pattern ==> chuyển sang html (ex1.html).</p>
+                </li>
+                <li>
+                    <p class="contentt">Ex2: Thiết kế một trang Web sử dụng mẫu Z-pattern ==> chuyển sang html (ex2.html)</p>
 
-    <div id="Tab2" class="tabcontent">
+                </li>
+                <li>
+                    <p class="contentt">Với cả Ex1, Ex2: Tạo 2 tab Design và Implementation: </p>
+                    <p class="content-sub">Design: chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế (thiết kế trên giấy và Figma), có nút Download để download file thiết kế về nếu muốn.</p>
+                    <p class="content-sub">Implementation: nội dung phần hiện thực trên html.</p>
+                </li>
+                <li>
+                    <p class="contentt">Sau khi làm xong, upload toàn bộ lên website cá nhân trên github.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="Tab3" class="tabcontent">
         <h1>Ex2: F-pattern</h1>
 
         <div class="subtab" style="margin: auto; width: max-content; margin-bottom: 50px;">
             <button class="subtablinks" onclick="openSubTab(event, 'DesignTab2')">Design</button>
-            <a href="#" onclick="loadImplementContent('ex2.html', 'ImplementTab2')"> <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
+            <a href="#" onclick="loadImplementContent('ex2.html', 'ImplementTab2')">
+                <!-- Thay đổi đường dẫn của 'implement.html' nếu cần -->
                 <button class="subtablinks" onclick="openSubTab(event, 'ImplementTab2')">Implement</button>
             </a>
         </div>
-        
+
         <div id="DesignTab2" class="subtabcontent">
             <div style="float: left; text-align: center; margin-left: 300px; margin-top: 20px;">
                 <img src="assets/images/fpattern.jpg">
@@ -125,7 +153,8 @@
                 <a href="assets/images/f.jpg" download="assets/images/f.jpg">
                     <br><button>Download Image</button>
                 </a>
-                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-2&mode=design&t=Cth7ODzuYc58IaNN-4">
+                <a
+                    href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=57-2&mode=design&t=Cth7ODzuYc58IaNN-4">
                     <button style="margin-left: 20px;">Figma</button>
                 </a>
             </div>
@@ -134,7 +163,7 @@
         <div id="ImplementTab2" class="subtabcontent">
         </div>
     </div>
-    
+
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -149,7 +178,7 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-    
+
         function openSubTab(evt, subTabName) {
             var i, subtabcontent, subtablinks;
             subtabcontent = document.getElementsByClassName("subtabcontent");
@@ -174,7 +203,7 @@
                 .catch(error => console.error('Error:', error));
         }
     </script>
-    
+
 </body>
 
 </html>

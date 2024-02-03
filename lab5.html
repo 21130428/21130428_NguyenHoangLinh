@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
+<head>
+
+</head>
+
+<body>
+
+    <head>
+        <title>Lab 5</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.2-web/css/all.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/lab5.css">
+        <style>
+            /* Định dạng cho tab */
+            .tab {
+                margin-top: 50px;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+            }
+
+            /* Định dạng cho nút tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+
+            /* Định dạng cho nút tab khi được chọn */
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            /* Định dạng cho nội dung của tab */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
+            }
+        </style>
     </head>
+
     <body>
-        <head>
-            <title>Lab 5</title>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.2-web/css/all.css">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="assets/css/style.css">
-            <link rel="stylesheet" href="assets/css/lab5.css">
-            <style>
-                /* Định dạng cho tab */
-                .tab {
-                    margin-top: 50px;
-                    overflow: hidden;
-                    border: 1px solid #ccc;
-                    background-color: #f1f1f1;
-                }
-        
-                /* Định dạng cho nút tab */
-                .tab button {
-                    background-color: inherit;
-                    float: left;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    padding: 14px 16px;
-                    transition: 0.3s;
-                }
-        
-                /* Định dạng cho nút tab khi được chọn */
-                .tab button:hover {
-                    background-color: #ddd;
-                }
-        
-                .tab button.active {
-                    background-color: #ccc;
-                }
-        
-                /* Định dạng cho nội dung của tab */
-                .tabcontent {
-                    display: none;
-                    padding: 6px 12px;
-                    border: 1px solid #ccc;
-                    border-top: none;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="w3-top">
-                <div class="w3-bar w3-black w3-card">
-                    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" style="font-weight: bold;">HOME</a>
-                    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">ABOUT</a>
-                    <a href="lab4.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">LAB4</a>
-                    <a href="lab5.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">LAB5</a>
-                    <a href="lab6.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">LAB6</a>
-                    <a href="lab7.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">LAB7</a>
-                    <a href="lab8.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">LAB8</a>
-                    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-                        style="font-weight: bold;">CONTACT</a>
-                </div>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large" style="font-weight: bold;">HOME</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">ABOUT</a>
+                <a href="lab4.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">LAB4</a>
+                <a href="lab5.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">LAB5</a>
+                <a href="lab6.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">LAB6</a>
+                <a href="lab7.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">LAB7</a>
+                <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    style="font-weight: bold;">CONTACT</a>
             </div>
-        
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Tab1')">User scenario</button>
-            <button class="tablinks" onclick="openTab(event, 'Tab2')">Implement</button>
         </div>
-        
-        <div id="Tab1" class="tabcontent">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Tab1')">Requirement</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">User scenario</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">Implement</button>
+        </div>
+
+        <div id="Tab2" class="tabcontent">
             <h1>User scenario:</h1>
             <div style="float: left; text-align: center; margin-left: 200px; margin-top: 20px;">
                 <img src="assets/images/user scenario.jpg">
@@ -85,18 +88,38 @@
             </div>
             <div style="float: right; text-align: center; margin-right: 200px;">
                 <img src="assets/images/lab5.jpg" style="margin-top: 20px;">
-                <a href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=52-2&mode=design&t=jG2njMSpwfVxgslz-4">
+                <a
+                    href="https://www.figma.com/file/FgUUfWe7ryYrHu9VxP71eX/Untitled?type=design&node-id=52-2&mode=design&t=jG2njMSpwfVxgslz-4">
                     <br><button style="margin-left: 20px;">Figma</button>
                 </a>
             </div>
         </div>
-        
-        <div id="Tab2" class="tabcontent">
+
+        <div id="Tab1" class="tabcontent">
+            <div class="text">
+                <h1>Requirement:</h1>
+                <ul>
+                    <li>
+                        <p class="contentt">
+                            (1) Tạo ra một user scenario.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="contentt">(2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó thiết kế trên Figma rồi chuyển sang html tương ứng cho thiết kế này.</p>
+                    </li>
+                    <li>
+                        <p class="contentt">Upload lên github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Tab3" class="tabcontent">
             <h1>Implement:</h1>
             <div id="container">
                 <div id="section_one">
                     <p class="title">Account</p>
-                    <div class="content name"><i class="fa-solid fa-user"></i><input type="text" placeholder="Full Name"></div>
+                    <div class="content name"><i class="fa-solid fa-user"></i><input type="text"
+                            placeholder="Full Name"></div>
                     <div class="content email"><i class="fa-solid fa-envelope"></i><input type="text"
                             placeholder="Email Adress"></div>
                     <div class="content password"><i class="fa-solid fa-key fa-flip-horizontal"></i><input type="text"
@@ -121,11 +144,12 @@
                         <button id="visa"><i class="fa-brands fa-cc-visa"></i>Credit Card</button>
                         <button id="paypal"><i class="fa-brands fa-cc-paypal"></i>Paypal</button>
                     </div>
-        
+
                     <div class="content cardNumber"><i class="fa-regular fa-credit-card"></i><input type="text"
                             placeholder="Card Number"></div>
                     <div class="bot">
-                        <div class="content cardCVC"><i class="fa-solid fa-user"></i><input type="text" placeholder="Card CVC">
+                        <div class="content cardCVC"><i class="fa-solid fa-user"></i><input type="text"
+                                placeholder="Card CVC">
                         </div>
                         <div class="datetime">
                             <select name="" class="select">
@@ -513,7 +537,7 @@
                 </div>
             </div>
         </div>
-        
+
         <script>
             function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
@@ -530,4 +554,5 @@
             }
         </script>
     </body>
+
 </html>
